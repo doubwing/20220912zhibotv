@@ -1,7 +1,5 @@
 #EXTM3U
 #EXTINF:-1 group-title="央视",CCTV-1
-http://39.135.32.24:6610/000000001000/1000000001000021973/1.m3u8?i?zzhongd
-#EXTINF:-1 group-title="央视",CCTV-1
 http://39.134.67.226/PLTV/88888888/224/3221225816/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1
 http://39.135.138.58:18890/PLTV/88888888/224/3221225618/index.m3u8
@@ -35,6 +33,14 @@ http://39.134.65.173/PLTV/88888888/224/3221225816/1.m3u8
 http://39.134.65.183/PLTV/88888888/224/3221225816/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1
 http://39.134.65.175/PLTV/88888888/224/3221225816/1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-1
+http://39.135.32.24:6610/000000001000/1000000001000021973/1.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-1
+http://39.135.32.6:6610/PLTV/77777777/224/3221225924/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-1
+http://39.135.32.6:6610/PLTV/77777777/224/3221225654/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-1
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv1/1.m3u8?IASHttpSessionId=OTT?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-2
 http://39.135.138.58:18890/PLTV/88888888/224/3221225619/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-2
@@ -43,6 +49,22 @@ http://39.135.138.60:18890/PLTV/88888910/224/3221225643/index.m3u8
 http://39.134.115.163:8080/PLTV/88888910/224/3221225619/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-2
 http://39.135.55.7:6610/PLTV/88888888/224/3221225800/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv2/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.32.24:6610/000000001000/1000000001000012442/1.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.32.6:6610/PLTV/77777777/224/3221225657/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.32.6:6610/PLTV/77777777/224/3221225676/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.55.105:6610/PLTV/88888888/224/3221225800/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.55.105:6610/PLTV/88888888/224/3221226795/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://39.135.55.105:6610/PLTV/88888888/224/3221225923/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-2
+http://117.148.179.147/PLTV/88888888/224/3221231678/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-3
 http://39.134.67.226/PLTV/88888888/224/3221225799/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3
@@ -63,6 +85,16 @@ http://39.134.65.181/PLTV/88888888/224/3221225799/1.m3u8
 http://39.134.65.173/PLTV/88888888/224/3221225799/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3
 http://140.207.241.3:8080/live/program/live/cctv3hd/4000000/d1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-3
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv3/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-3
+http://39.135.32.24:6610/000000001000/1000000001000011218/index.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-3
+http://39.135.32.6:6610/PLTV/77777777/224/3221225713/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-3
+http://39.135.32.6:6610/PLTV/77777777/224/3221225677/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-3
+http://39.135.55.105:6610/PLTV/88888888/224/3221227055/index.m3u8?servicetype=1?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-4
 http://39.135.32.7:6610/000000001000/HD-8000k-1080P-cctv4/1.m3u8?IASHttpSessionId=OTT?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-4
@@ -71,6 +103,20 @@ http://111.20.33.93/PLTV/88888893/224/3221226223/index.m3u8
 http://39.135.32.7:6610/000000001000/HD-8000k-1080P-cctv4/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4
 http://39.134.115.163:8080/PLTV/88888910/224/3221225621/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-4
+http://39.135.32.24:6610/000000001000/1000000002000031664/1.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4
+http://39.135.32.6:6610/PLTV/77777777/224/3221225761/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4
+http://39.135.32.6:6610/PLTV/77777777/224/3221225775/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4
+http://39.135.32.6:6610/PLTV/77777777/224/3221225753/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4
+http://39.135.55.105:6610/PLTV/88888888/224/3221225802/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4
+http://39.135.55.105:6610/PLTV/88888888/224/3221226968/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4
+http://117.148.179.157/PLTV/88888888/224/3221231726/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-5
 http://39.135.138.58:18890/PLTV/88888888/224/3221225633/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5
@@ -101,6 +147,16 @@ http://111.40.196.9/PLTV/88888888/224/3221225733/index.m3u8
 http://39.134.65.179/PLTV/88888888/224/3221225818/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5
 http://39.134.65.181/PLTV/88888888/224/3221225818/1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-5
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv5/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5
+http://39.135.32.24:6610/000000001000/1000000001000004794/1.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5
+http://39.135.32.6:6610/PLTV/77777777/224/3221225516/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5
+http://39.135.32.6:6610/PLTV/77777777/224/3221225660/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5
+http://39.135.55.105:6610/PLTV/88888888/224/3221227170/index.m3u8?servicetype=1?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-5+
 http://live.aikan.miguvideo.com/PLTV/88888888/224/3221231459/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5+
@@ -125,6 +181,14 @@ http://39.134.65.175/PLTV/88888888/224/3221225507/1.m3u8
 http://39.134.65.162/PLTV/88888888/224/3221225507/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5+
 http://140.207.241.3:8080/live/program/live/cctv5phd/4000000/d1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-5+
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv05plus/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5+
+http://39.135.32.6:6610/PLTV/77777777/224/3221225712/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5+
+http://39.135.55.105:6610/PLTV/88888888/224/3221225821/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-5+
+http://39.135.55.105:6610/PLTV/88888888/224/3221225939/index.m3u8?servicetype=1?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-6
 http://39.135.138.58:18890/PLTV/88888888/224/3221225632/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6
@@ -139,6 +203,16 @@ http://39.134.65.175/PLTV/88888888/224/3221225814/1.m3u8
 http://39.134.65.177/PLTV/88888888/224/3221225814/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6
 http://140.207.241.3:8080/live/program/live/cctv6hd/4000000/d1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-6
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv6/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-6
+http://39.135.32.24:6610/000000001000/1000000001000001737/index.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-6
+http://39.135.32.6:6610/PLTV/77777777/224/3221225715/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-6
+http://39.135.55.105:6610/PLTV/88888888/224/3221227137/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-6
+http://117.148.179.157/PLTV/88888888/224/3221232689/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-7
 http://39.135.138.58:18890/PLTV/88888888/224/3221225624/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-7
@@ -151,6 +225,18 @@ http://39.134.65.179/PLTV/88888888/224/3221225671/1.m3u8
 http://39.134.65.164/PLTV/88888888/224/3221225671/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-7
 http://39.134.65.181/PLTV/88888888/224/3221225671/1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-7
+http://39.135.32.7:6610/000000001000/cctv-7/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-7
+http://39.135.32.24:6610/000000001000/1000000001000017218/1.m3u8?xtkg?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-7
+http://39.135.32.6:6610/PLTV/77777777/224/3221225700/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-7
+http://39.135.55.105:6610/PLTV/88888888/224/3221225805/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-7
+http://39.135.55.105:6610/PLTV/88888888/224/3221225927/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-7
+http://117.148.179.157/PLTV/88888888/224/3221231633/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-8
 http://39.135.138.58:18890/PLTV/88888888/224/3221225635/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-8
@@ -169,6 +255,18 @@ http://39.134.65.175/PLTV/88888888/224/3221225795/1.m3u8
 http://39.134.65.177/PLTV/88888888/224/3221225795/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-8
 http://140.207.241.3:8080/live/program/live/cctv8hd/4000000/d1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-8
+http://39.135.32.7:6610/000000001000/HD-8000k-1080P-cctv8/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-8
+http://39.135.32.24:6610/000000001000/1000000001000003736/index.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-8
+http://39.135.32.6:6610/PLTV/77777777/224/3221225716/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-8
+http://39.135.32.6:6610/PLTV/77777777/224/3221225630/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-8
+http://39.135.55.105:6610/PLTV/88888888/224/3221227174/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-8
+http://117.148.179.157/PLTV/88888888/224/3221231694/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-9
 http://live.aikan.miguvideo.com/PLTV/88888888/224/3221231697/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9
@@ -187,6 +285,18 @@ http://39.134.65.166/PLTV/88888888/224/3221225676/1.m3u8
 http://39.134.65.183/PLTV/88888888/224/3221225676/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9
 http://39.134.65.173/PLTV/88888888/224/3221225676/1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-9
+http://39.135.32.7:6610/000000001000/HD-4000k-1080P-cctv9/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-9
+http://39.135.32.24:6610/000000001000/1000000001000014583/1.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-9
+http://39.135.32.6:6610/PLTV/77777777/224/3221225663/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-9
+http://39.135.55.105:6610/PLTV/88888888/224/3221225820/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-9
+http://39.135.55.105:6610/PLTV/88888888/224/3221225929/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-9
+http://117.148.179.157/PLTV/88888888/224/3221231697/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-10
 http://live.aikan.miguvideo.com/PLTV/88888888/224/3221231666/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-10
@@ -207,6 +317,18 @@ http://39.134.65.166/PLTV/88888888/224/3221225677/1.m3u8
 http://39.134.65.183/PLTV/88888888/224/3221225677/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-10
 http://140.207.241.3:8080/live/program/live/cctv10hd/4000000/d1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-10
+http://39.135.32.7:6610/000000001000/cctv-10/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-10
+http://39.135.32.24:6610/000000001000/1000000001000023734/index.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-10
+http://39.135.32.6:6610/PLTV/77777777/224/3221225704/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-10
+http://39.135.55.105:6610/PLTV/88888888/224/3221225814/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-10
+http://39.135.55.105:6610/PLTV/88888888/224/3221225931/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-10
+http://117.148.179.157/PLTV/88888888/224/3221231666/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-11
 http://live.aikan.miguvideo.com/PLTV/88888888/224/3221231711/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-11
@@ -237,6 +359,16 @@ http://39.134.65.181/PLTV/88888888/224/3221225669/1.m3u8
 http://39.134.65.166/PLTV/88888888/224/3221225669/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-12
 http://39.134.65.173/PLTV/88888888/224/3221225669/1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-12
+http://39.135.32.7:6610/000000001000/cctv-12/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-12
+http://39.135.32.6:6610/PLTV/77777777/224/3221225645/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-12
+http://39.135.55.105:6610/PLTV/88888888/224/3221225816/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-12
+http://39.135.55.105:6610/PLTV/88888888/224/3221225932/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-12
+http://117.148.179.157/PLTV/88888888/224/3221231660/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-13
 http://ncyd.jilu8.cn:80/PLTV/88888910/224/3221225638/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13
@@ -253,6 +385,22 @@ http://39.134.65.183/PLTV/88888888/224/3221225812/1.m3u8
 http://39.134.65.175/PLTV/88888888/224/3221225812/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13
 http://39.134.65.181/PLTV/88888888/224/3221225812/1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.32.24:6610/000000001000/1000000002000021303/1.m3u8?i?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.32.6:6610/PLTV/77777777/224/3221225798/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.32.7:6610/000000001000/HD-8000k-1080P-cctv13/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.32.6:6610/PLTV/77777777/224/3221225759/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.32.6:6610/PLTV/77777777/224/3221225742/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.32.6:6610/PLTV/77777777/224/3221225787/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://39.135.55.105:6610/PLTV/88888888/224/3221225817/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-13
+http://183.207.249.11/PLTV/3/224/3221225560/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-14
 http://39.135.138.58:18890/PLTV/88888888/224/3221225639/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14
@@ -289,6 +437,18 @@ http://39.134.65.162/PLTV/88888888/224/3221225513/1.m3u8
 http://39.135.138.58:18890/PLTV/88888888/224/3221226230/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-16奥林匹克
 http://39.135.138.58:18890/PLTV/88888888/224/3221226233/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-16
+http://39.135.32.7:6610/000000001000/HD-8000k-1080P-cctv16/1.m3u8?IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-16
+http://39.135.55.7:6610/PLTV/88888888/224/3221227148/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-16
+http://39.135.32.6:6610/PLTV/77777777/224/3221225956/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-16
+http://39.135.32.6:6610/PLTV/77777777/224/3221225897/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-16
+http://39.135.55.105:6610/PLTV/88888888/224/3221227148/index.m3u8?servicetype=1?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-16
+http://39.135.55.105:6610/PLTV/88888888/224/3221227125/index.m3u8?servicetype=1?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-17农业农村
 http://live.aikan.miguvideo.com/PLTV/88888888/224/3221231772/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-17农业农村
@@ -301,8 +461,24 @@ http://39.134.65.181/PLTV/88888888/224/3221225708/1.m3u8
 http://39.134.65.183/PLTV/88888888/224/3221225708/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4中文国际欧洲
 http://117.148.179.162/PLTV/88888888/224/3221231615/index.m3u8
-#EXTINF:-1 group-title="央视",CCTV-4K超高清
+#EXTINF:-1 group-title="央视",CCTV-4中文国际欧洲
+http://117.148.179.157/PLTV/88888888/224/3221231615/index.m3u8?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4中文国际欧洲
+http://117.148.179.157/PLTV/88888888/224/3221232852/index.m3u8?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4中文国际美洲
+http://117.148.179.157/PLTV/88888888/224/3221231654/index.m3u8?zzhongd
+#EXTINF:-1 group-title="央视",CCTV-4中文国际美洲
+http://117.148.179.157/PLTV/88888888/224/3221232866/index.m3u8?zzhongd
+#EXTINF:-1 group-title="央视",4K超高清
 http://liveop.cctv.cn/hls/4KHD/playlist.m3u8
+#EXTINF:-1 group-title="央视",4K超高清
+http://39.135.55.7:6610/PLTV/88888888/224/3221226998/index.m3u8?servicetype=1&IASHttpSessionId=OTT?zzhongd
+#EXTINF:-1 group-title="央视",4K超高清
+http://liveop.cctv.cn/hls/4KHD/playlist.m3u8?zzhongd
+#EXTINF:-1 group-title="央视",8K超高清
+http://117.148.179.157/PLTV/88888888/224/3221233413/index.m3u8?zzhongd
+#EXTINF:-1 group-title="央视",8K超高清
+http://117.148.179.157/PLTV/88888888/224/3221233439/index.m3u8?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-怀旧剧场
 http://117.148.179.158/PLTV/88888888/224/3221231544/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-怀旧剧场

@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="央视",CCTV-1
-http://39.135.32.24:6610/000000001000/1000000001000021973/1.m3u8
+http://39.135.32.24:6610/000000001000/1000000001000021973/1.m3u8?i?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-1
 http://39.134.67.226/PLTV/88888888/224/3221225816/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1
@@ -64,7 +64,7 @@ http://39.134.65.173/PLTV/88888888/224/3221225799/1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3
 http://140.207.241.3:8080/live/program/live/cctv3hd/4000000/d1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4
-http://39.135.138.58:18890/PLTV/88888888/224/3221225621/index.m3u8
+http://39.135.32.7:6610/000000001000/HD-8000k-1080P-cctv4/1.m3u8?IASHttpSessionId=OTT?zzhongd
 #EXTINF:-1 group-title="央视",CCTV-4
 http://111.20.33.93/PLTV/88888893/224/3221226223/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4

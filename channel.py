@@ -16,6 +16,8 @@ def loadM3uFile(m3uFile):
                 channelInfo = re.match(r"#EXTINF.*?=\"(.*?)\",(.*?)(（源[\d]+）)?\n", line)
                 currentChannelGroup = channelInfo.group(1)
                 currentChannelName = channelInfo.group(2)
+                if currentChannelName.find('卫视') != -1 and currentChannelGroup.find('总') == -1:
+                    currentChannelGroup = currentChannelGroup + '总'
             if line.startswith('http'):
                 channelUrl = line.replace('\n', '')
                 if currentChannelGroup == beforeChannelGroup and currentChannelName != beforeChannelName:
@@ -108,7 +110,7 @@ if __name__ == '__main__':
     # 检查直播源有效性
     print('源有效性检测')
     M3UChecker.checkChannelsBySomePath('./输出/outputChannel.m3u', './输出/usefulChannel.m3u', 
-        './输出/uselessChannel.m3u', 40)   
+        './输出/uselessChannel.m3u', 30)   
     # 给直播源添加后缀“（源1）”
     print('添加源后缀')
     addSuffix('./输出/usefulChannel.m3u', './输出/usefulChannelWithSuffix.m3u')     

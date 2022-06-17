@@ -20,7 +20,7 @@ def welcome():
     return msg
 
 # https://blog.csdn.net/Chenkeyu_/article/details/118354931
-@func_set_timeout(2)
+@func_set_timeout(3)
 def get(url,GetStatus=0):
     headers = {
         'Accept-Language': "zh-CN,zh",
@@ -105,9 +105,8 @@ def m3u_load(m3uFile):
         displayMsg('m3u_load', f'{m3uFile} 解析完毕')
         return channel
 
-def work(m3u_data,outputFile,workname='Default'):
+def work(m3u_data,outputFile,workname='Default',wrongFile = 'wrong.m3u'):
     displayMsg(workname, f'总数据量为{len(m3u_data)}个')
-    wrongFile = 'wrong.m3u'
     new_data = []
     wrong_data = []
     for data in m3u_data:
@@ -130,14 +129,17 @@ def work(m3u_data,outputFile,workname='Default'):
         for item in new_data:
             file.write(item[0] + '\n')
             file.write(item[1] + '\n')
-    with open(wrongFile, 'w',encoding='utf8') as file:
+    with open(wrongFile, 'a',encoding='utf8') as file:
         for item in wrong_data:
             file.write(item[0] + '\n')
             file.write(item[1] + '\n')
+    
+    return outputFile
 
 # 读取当前目录.m3u文件，并去除checkOutput.m3u
 # 依次检测链接是否可用，可用链接放到checkOutput.m3u，可能不可用链接放到wrong.m3u
-if __name__ == '__main__':
+# if __name__ == '__main__':
+def checkChannelsFromCurrentDir():
     print(welcome())
 
     outputFile = 'checkOutput.m3u'
@@ -156,8 +158,26 @@ if __name__ == '__main__':
     p.close()
     p.join()
 
-
-
-
-
+def checkChannelsBySomePath(checkFile, outputFile, uselessFile, threadNumber):
+    writeFile(outputFile,'#EXTM3U\n')
+    writeFile(uselessFile,'')
+    m3u_data = m3u_load(checkFile)
+    singleTaskNumber = len(m3u_data) // threadNumber
+    outputFiles = []
+    p = Pool(threadNumber)
+    for index in range (threadNumber):
+        if index == threadNumber - 1:
+            result = p.apply_async(work, args=(m3u_data[index * singleTaskNumber: ],outputFile + str(index),
+                checkFile + '--' + str(index),uselessFile))
+        else:
+            result = p.apply_async(work, args=(m3u_data[index * singleTaskNumber: (index + 1) * singleTaskNumber],outputFile  + str(index),
+                checkFile + '--' + str(index),uselessFile))
+        outputFiles.append(result)
+    p.close()
+    p.join()
+   
+    for filePath in outputFiles:
+        with open(filePath.get(), 'r',encoding='utf8') as origin, open(outputFile, 'a',encoding='utf8') as dest :
+            dest.write(origin.read())
+        os.remove(filePath.get())
 

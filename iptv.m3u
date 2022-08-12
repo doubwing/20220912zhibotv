@@ -541,6 +541,14 @@ http://39.134.32.102:6610/270000001111/1110000010/index.m3u8?IASHttpSessionId=OT
 http://59.49.41.41/live.aishang.ctlcdn.com/00000110240325_1/playlist.m3u8?CONTENTID=00000110240325_1
 #EXTINF:-1 group-title="央视",CHC高清电影（源2）
 http://111.20.33.93/PLTV/88888893/224/3221226463/index.m3u8
+#EXTINF:-1 group-title="港澳台",凤凰卫视中文台（源1）
+https://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8
+#EXTINF:-1 group-title="港澳台",凤凰卫视咨询台（源1）
+https://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8
+#EXTINF:-1 group-title="港澳台",香港卫视（源1）
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+#EXTINF:-1 group-title="港澳台",澳门卫视（源1）
+https://live.mastvnet.com/lsdream/lY44pmm/2000/live.m3u8
 #EXTINF:-1 group-title="湖南总",湖南卫视（源1）
 http://39.135.138.58:18890/PLTV/88888888/224/3221225704/index.m3u8
 #EXTINF:-1 group-title="湖南总",湖南卫视（源2）

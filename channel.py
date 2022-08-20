@@ -120,9 +120,9 @@ if __name__ == '__main__':
     addSuffix(f'.{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u', f'.{SEPERATOR}输出{SEPERATOR}usefulChannelWithSuffix.m3u')     
     print('复制有效源到当前目录')
     if platform.system().lower() == 'windows':
-        os.system(f"copy .{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u .{SEPERATOR}iptv.m3u")
+        os.system(f"copy .{SEPERATOR}输出{SEPERATOR}usefulChannelWithSuffix.m3u .{SEPERATOR}iptv.m3u")
     else:
-        os.system(f"cp .{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u .{SEPERATOR}iptv.m3u")
+        os.system(f"cp .{SEPERATOR}输出{SEPERATOR}usefulChannelWithSuffix.m3u .{SEPERATOR}iptv.m3u")
     # 删除直播源后缀
     # print('源后缀去除')
     # delSuffix(f'.{SEPERATOR}输出{SEPERATOR}usefulChannelWithSuffix.m3u', f'.{SEPERATOR}输出{SEPERATOR}outputChannelWithoutSuffix.m3u')

@@ -113,6 +113,8 @@ if __name__ == '__main__':
     combineChannelInfo(f'.{SEPERATOR}频道源{SEPERATOR}originChannel.m3u', f'.{SEPERATOR}输出{SEPERATOR}outputChannel.m3u', f'.{SEPERATOR}频道源{SEPERATOR}newChannel.m3u') 
     # 检查直播源有效性
     print('源有效性检测')
+    if not os.path.exists(f".{SEPERATOR}输出"):
+        os.mkdir(f".{SEPERATOR}输出")
     M3UChecker.checkChannelsBySomePath(f'.{SEPERATOR}输出{SEPERATOR}outputChannel.m3u', f'.{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u', 
         f'.{SEPERATOR}输出{SEPERATOR}uselessChannel.m3u', 30)   
     # 给直播源添加后缀“（源1）”

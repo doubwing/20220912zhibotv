@@ -159,8 +159,9 @@ def checkChannelsFromCurrentDir():
     p.join()
 
 def checkChannelsBySomePath(checkFile, outputFile, uselessFile, threadNumber):
-    writeFile(outputFile,'#EXTM3U\n')
-    writeFile(uselessFile,'')
+    currentTime = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
+    writeFile(outputFile,f'#EXTM3U\n#{currentTime}\n')
+    writeFile(uselessFile,f'#EXTM3U\n#{currentTime}\n')
     m3u_data = m3u_load(checkFile)
     singleTaskNumber = len(m3u_data) // threadNumber
     outputFiles = []

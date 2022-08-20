@@ -1,6 +1,15 @@
+import os
+import platform
+import time
 import M3UChecker
 import re
 
+SEPERATOR = os.sep
+
+'''
+如果节目是卫视频道，在群组上加上"总"字
+去除链接相同的频道
+'''
 def loadM3uFile(m3uFile): 
     channel = []
     channelUrlSet = set()
@@ -34,34 +43,27 @@ def loadM3uFile(m3uFile):
                     channel.append((currentChannelGroup, currentChannelName, channelUrl))
         return channel
 
-def deleteSuffixAfterChannelInfo(channel):
-    for index, channelItem in enumerate(channel):
-        channelGroup = channelItem[0]
-        channelName = channelItem[1]
-        channelUrl = channelItem[2]
-        if channelUrl == '' or channelName == '':
-            continue
-        channelInfo = '#EXTINF:-1 group-title="' + channelGroup + '",' + channelName
-        channel[index] = (channelInfo, channelUrl)
-    return channel
-
-def addSuffixAfterChannelInfo(channel):
+def combineChannelGroupAndName(channel, needSuffix):
     currentChannelGroup = ''
     currentChannelName = ''
-    channelCount = 1
+    channelSourceCount = 1
+    suffix = ''
     for index, channelItem in enumerate(channel):
         channelGroup = channelItem[0]
         channelName = channelItem[1]
         channelUrl = channelItem[2]
         if channelUrl == '' or channelName == '':
             continue
-        if channelGroup == currentChannelGroup and channelName == currentChannelName:
-            channelCount = channelCount + 1
-        else:
-            currentChannelGroup = channelGroup
-            currentChannelName = channelName
-            channelCount = 1
-        channelInfo = '#EXTINF:-1 group-title="' + channelGroup + '",' + channelName + '（源' + str(channelCount) + '）'
+        if needSuffix:
+            if channelGroup == currentChannelGroup and channelName == currentChannelName:
+                channelSourceCount = channelSourceCount + 1
+            else:
+                currentChannelGroup = channelGroup
+                currentChannelName = channelName
+                channelSourceCount = 1
+            suffix = '（源' + str(channelSourceCount) + '）'
+
+        channelInfo = '#EXTINF:-1 group-title="' + channelGroup + '",' + channelName + suffix
         channel[index] = (channelInfo, channelUrl)
     return channel
 
@@ -82,11 +84,13 @@ def combineChannelInfo(originFile, outputFile, newFile):
                     originChannels.insert(channelGroup + 1, newChannel)
                 except:
                     originChannels.append(newChannel)
-    writeM3uInfoToFile(deleteSuffixAfterChannelInfo(originChannels), outputFile) 
+    writeM3uInfoToFile(combineChannelGroupAndName(originChannels, False), outputFile) 
     
 def writeM3uInfoToFile(channel, outputM3uFile): 
+    currentTime = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
     with open(outputM3uFile, 'w', encoding='utf8') as file:
         file.write('#EXTM3U\n')
+        file.write(f'#current time is {currentTime}\n')
         for channelItem in channel:
             if len(channelItem) == 2:
                 file.write(channelItem[0] + '\n')
@@ -94,26 +98,31 @@ def writeM3uInfoToFile(channel, outputM3uFile):
 
 # 给直播源添加后缀“（源1）”
 def addSuffix(originFile, outputFile):
-    channel = addSuffixAfterChannelInfo(loadM3uFile(originFile))
+    channel = combineChannelGroupAndName(loadM3uFile(originFile), True)
     writeM3uInfoToFile(channel, outputFile) 
 
 # 删除直播源后缀
 def delSuffix(originFile, outputFile):
-    channel = deleteSuffixAfterChannelInfo(loadM3uFile(originFile))
+    channel = combineChannelGroupAndName(loadM3uFile(originFile), False)
     writeM3uInfoToFile(channel, outputFile) 
 
 if __name__ == '__main__':
     # 给直播源添加新源，去重并添加后缀“（源1）”
     # 合并新源并去除重复源
     print('合并新源并去除重复源')
-    combineChannelInfo('./频道源/originChannel.m3u', './输出/outputChannel.m3u', './频道源/newChannel.m3u') 
+    combineChannelInfo(f'.{SEPERATOR}频道源{SEPERATOR}originChannel.m3u', f'.{SEPERATOR}输出{SEPERATOR}outputChannel.m3u', f'.{SEPERATOR}频道源{SEPERATOR}newChannel.m3u') 
     # 检查直播源有效性
     print('源有效性检测')
-    M3UChecker.checkChannelsBySomePath('./输出/outputChannel.m3u', './输出/usefulChannel.m3u', 
-        './输出/uselessChannel.m3u', 30)   
+    M3UChecker.checkChannelsBySomePath(f'.{SEPERATOR}输出{SEPERATOR}outputChannel.m3u', f'.{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u', 
+        f'.{SEPERATOR}输出{SEPERATOR}uselessChannel.m3u', 30)   
     # 给直播源添加后缀“（源1）”
     print('添加源后缀')
-    addSuffix('./输出/usefulChannel.m3u', './输出/usefulChannelWithSuffix.m3u')     
+    addSuffix(f'.{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u', f'.{SEPERATOR}输出{SEPERATOR}usefulChannelWithSuffix.m3u')     
+    print('复制有效源到当前目录')
+    if platform.system().lower() == 'windows':
+        os.system(f"copy .{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u .{SEPERATOR}iptv.m3u")
+    else:
+        os.system(f"cp .{SEPERATOR}输出{SEPERATOR}usefulChannel.m3u .{SEPERATOR}iptv.m3u")
     # 删除直播源后缀
     # print('源后缀去除')
-    # delSuffix('./输出/usefulChannelWithSuffix.m3u', './输出/outputChannelWithoutSuffix.m3u')
+    # delSuffix(f'.{SEPERATOR}输出{SEPERATOR}usefulChannelWithSuffix.m3u', f'.{SEPERATOR}输出{SEPERATOR}outputChannelWithoutSuffix.m3u')

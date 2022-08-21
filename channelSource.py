@@ -2,27 +2,48 @@ import getopt
 import json
 import os
 import re
+import shutil
 import sys
+import time
+import zipfile
 import M3UChecker
 
 SEPERATOR = os.sep
 HELP = '''
-该脚本用于HttpCanary打包zip的操作
+该脚本用于HttpCanary打包zip或其他订阅源的操作
 
+-h help     :获取帮助
 -f file     :指定要操作的zip包路径
+             zip包格式样例:上海卫视_上海总.zip，将自动从其中获取频道名和频道组
+             zip包格式样例:上海卫视.zip，将自动从其中获取频道名，频道组自动判断
+-d dir      :指定要操作的多个zip包所在路径，用于多个视频源的抓取
+             zip包格式样例:上海卫视_上海总.zip，将自动从其中获取频道名和频道组
+             zip包格式样例:上海卫视.zip，将自动从其中获取频道名，频道组自动判断
 -n name     :该频道源的名称
 -g group    :该频道所属组名称
+-c change   :将`北京卫视, http://xxxx`的格式转为m3u8，频道组自动判断
 '''
 WRONG = "参数输入错误"
-def extractChannelSourceZipFile(basePath, channelSourceZipFile):
-    print()
+# 排除从网站抓取的源
+WRONG_M3U8_REGEXX = "v2.91kds.cn"
+CURRENT_TIME = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
+
+
+def createDirIfNotExists(basePath):
+    if not os.path.exists(basePath):
+        os.makedirs(basePath)
 
 def getJSONFileInfoByKey(filePath, key):
     with open(filePath, 'r', encoding='utf8') as file:
         jsonFile = json.load(file)
-    return jsonFile[key]
+    return str(jsonFile[key])
 
-def getChannelGroupName(channelName: str, channelGroup: str):
+def extractChannelSourceZipFile(channelSourceZipFile, basePath):
+    file = zipfile.ZipFile(channelSourceZipFile)
+    file.extractall(basePath)
+    file.close()
+
+def getChannelGroupName(channelName: str, channelGroup: str = None):
     if channelGroup != None and channelGroup != '':
         return channelGroup
 
@@ -60,7 +81,7 @@ def getChannelGroupName(channelName: str, channelGroup: str):
     elif re.search(shanxiTVRegex, channelName, re.I) != None:
         channelGroup = "陕西总"
     elif re.search("卫视", channelName, re.I) != None:
-        channelGroup = channelName[:channelName.find("channelName") + 1]
+        channelGroup = channelName[:channelName.find("卫视")] + "总"
     elif re.search("NewTV", channelName, re.I) != None:
         channelGroup = "NewTV"
     else:
@@ -68,30 +89,53 @@ def getChannelGroupName(channelName: str, channelGroup: str):
 
     return channelGroup
 
-def getHttpCanaryChanneM3ulURL(channelFileDir, channelName: str):
-    urlArr = []
+def saveChannelM3u8URL(channelFileDir:str, channelSavePath: str, channelName: str, channelGroup:str):
+    urlSet = set()
     for filePath in os.listdir(channelFileDir):
-        if filePath.endswith("m3u"):
-            os.remove(f"{channelFileDir}{SEPERATOR}{filePath}")
-            continue
-        channelUrl = getJSONFileInfoByKey(f"{channelFileDir}{SEPERATOR}{filePath}{SEPERATOR}request.json", "url")
-        urlArr.append(channelUrl)
+        channelURL = getJSONFileInfoByKey(f"{channelFileDir}{SEPERATOR}{filePath}{SEPERATOR}request.json", "url")
+        if channelURL.find(".m3u8") != -1 and re.search(WRONG_M3U8_REGEXX, channelURL) == None:
+            urlSet.add(channelURL)
 
-    channelGroup = getChannelGroupName(channelName)
-    with open(f"{channelFileDir}{SEPERATOR}channelUrl.m3u", "w") as file:
-        for line in urlArr:
+    with open(channelSavePath, "w") as file:
+        for line in urlSet:
             file.write(f"#EXTINF:-1 group-title=\"{channelGroup}\",{channelName}\n")
             file.write(f"{line}\n")
 
 # 手机电视直播
 # https://shouji.baidu.com/detail/4034015
 # 需HttpCanary抓包某频道源后获取
-def getShouJiDianShiZhiBoChannelM3u(channelSourceZipFile, channelName, channelGroup):
-    basePath = os.getcwd()
-    extractChannelSourceZipFile(basePath, channelSourceZipFile)
-    getHttpCanaryChanneM3ulURL(basePath, channelName, channelGroup)
-    M3UChecker.checkChannelsBySomePath(f'{basePath}{SEPERATOR}channelUrl.m3u', f'{basePath}{SEPERATOR}usefulChannel.m3u', 
-        f'{basePath}{SEPERATOR}uselessChannel.m3u', 1)  
+def getShouJiDianShiZhiBoChannelM3u(channelSourceZipFile, channelName, channelGroup, isChannelSourceDir = False):
+    basePath = os.getcwd() 
+    tempPath = basePath + f"{SEPERATOR}temp_channel_dir"
+    middlePath = '' if not isChannelSourceDir else f'{SEPERATOR}{CURRENT_TIME}'
+    outputPath = basePath + f"{SEPERATOR}output{SEPERATOR}source{middlePath}"
+    channelGroup = getChannelGroupName(channelName, channelGroup)
+    channelTempSavePath = f'{tempPath}{SEPERATOR}channelURL.m3u'
+    usefulChannelPath = f'{outputPath}{SEPERATOR}{channelName}_{channelGroup}_usefulChannel.m3u'
+    uselessChannelPath = f'{outputPath}{SEPERATOR}{channelName}_{channelGroup}_uselessChannel.m3u'
+    if os.path.exists(tempPath):
+        shutil.rmtree(tempPath)
+    createDirIfNotExists(tempPath)
+    createDirIfNotExists(outputPath)
+    extractChannelSourceZipFile(channelSourceZipFile, tempPath)
+    saveChannelM3u8URL(tempPath, channelTempSavePath, channelName, channelGroup)
+    M3UChecker.checkChannelsBySomePath(channelTempSavePath, usefulChannelPath, uselessChannelPath, 1)
+    shutil.rmtree(tempPath)
+    print("可用频道源在如下路径")
+    print(f'{outputPath}{SEPERATOR}usefulChannel.m3u')
+    print("不能访问频道源在如下路径，可能有部分源存在误判情况")
+    print(f'{outputPath}{SEPERATOR}uselessChannel.m3u')
+
+def changeChannelFileToM3u8(filePath: str):
+    fileInM3u8 = filePath.replace(".m3u", "InM3u8.m3u")
+    with open(fileInM3u8, "w", encoding="utf8") as file:
+        file.write("#EXTM3U\n")
+    with open(filePath, "r", encoding="utf8") as r, open(fileInM3u8, "a", encoding="utf8") as w:
+        for line in r:
+            channelName, channelURL = line.split(",")
+            channelGroupName = getChannelGroupName(channelName)
+            w.write(f'#EXTINF:-1 group-title="{channelGroupName}",{channelName}\n')
+            w.write(f'{channelURL}')
 
 if __name__ == "__main__":
     # 参考：https://www.jb51.net/article/198726.htm
@@ -99,7 +143,7 @@ if __name__ == "__main__":
     channelName = ''
     channelGroupName = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1: ], "hf:n:g:", ["help", "file=", "name=", "group="])
+        opts, args = getopt.getopt(sys.argv[1: ], "hf:n:g:d:c:", ["help", "file=", "name=", "group=", "dir=", "change="])
     except getopt.GetoptError: 
         print(WRONG)
         print(HELP)
@@ -117,12 +161,43 @@ if __name__ == "__main__":
             channelName = arg
         if opt == "-g" or opt == "--group":
             channelGroupName = arg
+        if opt == "-d" or opt == "--dir":
+            channelSourceZipFileDir = arg
+        if opt == "-c" or opt == "--change":
+            changeChannelFileToM3u8(arg)
+            sys.exit(0)
 
-    if channelName == '' or channelSourceZipFile == '':
-        print("请输入频道名称和频道源zip文件后再继续下列操作")
+    if channelSourceZipFileDir == '':
+        if channelSourceZipFile == '':
+            print("请输入频道源zip文件后再继续下列操作")
+            sys.exit(0)
+
+        if not os.path.exists(channelSourceZipFile):
+            print("zip文件不存在，请重新输入")
+            sys.exit(0)
+
+        zipFileName = channelSourceZipFile.split(SEPERATOR)[-1]
+        if zipFileName.find("_") != -1:
+            channelName, channelGroupName = zipFileName.split("_")
+            channelGroupName = channelGroupName.split(".")[0]
+        else:
+            if channelName == '':
+                print("请输入频道名称和频道源zip文件后再继续下列操作")
+                sys.exit(0)
+            if channelGroupName == '':
+                print("未输入频道所属组的名称，将通过频道名称自动判断所属组信息")
+        getShouJiDianShiZhiBoChannelM3u(channelSourceZipFile, channelName, channelGroupName)
         sys.exit(0)
-
-    if channelGroupName == '':
-        print("未输入频道所属组的范围，将通过频道名称自动判断所属组信息")
-
-    getShouJiDianShiZhiBoChannelM3u(channelSourceZipFile, channelName, channelGroupName)
+    
+    if not os.path.isdir(channelSourceZipFileDir):
+        print("zip文件夹路径输入错误，请重新输入")
+        sys.exit(0)
+    
+    for zipFile in os.listdir(channelSourceZipFileDir):
+        channelSourceZipFile = f"{channelSourceZipFileDir}{SEPERATOR}{zipFile}"
+        if zipFile.find("_") != -1:
+            channelName, channelGroupName = zipFile.split("_")
+            channelGroupName = channelGroupName.split(".")[0]
+        else:
+            channelName = zipFile
+        getShouJiDianShiZhiBoChannelM3u(channelSourceZipFile, channelName, channelGroupName, True)

@@ -3,6 +3,7 @@ import time
 import os
 from multiprocessing import Pool
 from func_timeout import func_set_timeout
+import func_timeout
 
 def welcome():
     msg = '''
@@ -20,35 +21,36 @@ def welcome():
     return msg
 
 # https://blog.csdn.net/Chenkeyu_/article/details/118354931
-@func_set_timeout(3)
-def get(url,GetStatus=0):
+@func_set_timeout(9)
+def requestTest(url):
     headers = {
         'Accept-Language': "zh-CN,zh",
         'User-Agent': "Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; BLA-AL00 Build/HUAWEIBLA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.9 Mobile Safari/537.36",
         'Accept-Encoding': "gzip"
     }
-    try:
-        res = requests.request("GET", url, headers=headers, timeout=3)  #此处设置超时时间
-    except:
-        return 0
-    if GetStatus == 1:
-        return res.status_code
-    else:
-        if res.status_code == 200:
-            res = str(res.content,'utf-8')
-        else:
-            res = 0
-        return res
+    # stream设置为True就不会卡住了
+    resp = requests.request("GET", url, headers=headers, stream = True, timeout = 3)  
+    if resp.status_code == 200 or resp.text.find("EXTM3U") != -1:
+        return True
+    resp = requests.request("POST", url, headers=headers, stream = True, timeout = 3) 
+    if resp.status_code == 200 or resp.text.find("EXTM3U") != -1:
+        return True
+    resp = requests.request("OPTIONS", url, headers=headers, stream = True, timeout = 3) 
+    if resp.status_code == 200:
+        return True
+    return False
 
 def checkLink(url):
     try:
-        res = get(url,1)
-    except:
-        return 1
-    if res == 200:
-        return 1
-    else:
-        return 0
+        return requestTest(url);
+    except func_timeout.exceptions.FunctionTimedOut:
+        return False
+    except requests.exceptions.ConnectTimeout:
+        return False
+    except requests.exceptions.ReadTimeout:
+        return False
+    except requests.exceptions.ConnectionError:
+        return False
 
 def displayMsg(workname='Default',msg=''):
     now = time.asctime( time.localtime(time.time()) )

@@ -15,11 +15,43 @@ HELP = '''
 
 -h help             :获取帮助
 -o origin           :原本存在的源
--n new              :新添加的源
+-n new              :新添加的源，都是m3u格式
 -d dir              :指定一个文件夹下的源，会读取该文件夹下带useless的源
    detection-new    :指明检测新源
    detection-origin :指明检测老源
    delete           :删除源中频道名的后缀`（源1）`
+
+示例
+1. 获取帮助
+python3 channel.py -h
+2. 合并老源与新源
+无效源将在.`/output/useless/年_月_日_时_分_秒`目录下生成
+带后缀(（源1）)的有效源替换到根目录`iptv.m3u`
+不带后缀(（源1）)的有效源替换到频道源下，原来的老源将生成.bak文件
+2.1 仅合并源，不进行源有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -n /home/xxx/Desktop/test/newChannel.m3u
+2.2 合并源，并对老源进行有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -n /home/xxx/Desktop/test/newChannel.m3u --detection-origin
+2.3 合并源，并对新源进行有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -n /home/xxx/Desktop/test/newChannel.m3u --detection-new
+2.4 合并源，并对老源与新源进行有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -n /home/xxx/Desktop/test/newChannel.m3u --detection-origin --detection-new
+3. 合并多个新源与老源
+无效源将在.`/output/useless/年_月_日_时_分_秒`目录下生成
+带后缀(（源1）)的有效源替换到根目录`iptv.m3u`
+不带后缀(（源1）)的有效源替换到频道源下，原来的老源将生成.bak文件
+3.1 仅合并源，不进行源有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -d /home/xxx/Desktop/test1
+3.2 合并源，并对老源进行有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -d /home/xxx/Desktop/test1 --detection-origin
+3.3 合并源，并对新源进行有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -d /home/xxx/Desktop/test1 --detection-new
+3.4 合并源，并对老源与新源进行有效性检测
+python3  channel.py -o /home/xxx/Desktop/test/originChannel.m3u -d /home/xxx/Desktop/test1 --detection-origin --detection-new
+4. 删除源中频道名的后缀`（源1）`
+文件生成在当前目录下，带`WithoutSuffix.m3u`后缀
+python3 channel.py  --delete /home/xxx/Desktop/test/xxx.m3u
+
 '''
 
 def createDirIfNotExists(basePath):
@@ -197,6 +229,8 @@ if __name__ == '__main__':
 
     if len(opts) == 0:
         print(HELP)
+        sys.exit(0)
+        
     for opt, arg in opts:
         if opt == "-h" or opt == "--help":
             print(HELP)

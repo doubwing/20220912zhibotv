@@ -22,6 +22,24 @@ HELP = '''
 -n name     :该频道源的名称
 -g group    :该频道所属组名称
 -c change   :将`北京卫视, http://xxxx`的格式转为m3u8，频道组自动判断
+
+示例
+1. 获取帮助
+python3 channelSource.py -h
+2. 操作zip包
+有效源与无效源将在.`/output/source/年_月_日_时_分_秒`目录下生成
+2.1 从zip包名获取频道名与频道组
+python3 channelSource.py -f /home/xxx/Desktop/test/上海卫视_上海总.zip
+2.2 从zip包名获取频道名，频道组自动判断
+python3 channelSource.py -f /home/xxx/Desktop/test/上海卫视.zip
+2.3 zip包名并没有任何含义，则从参数获取频道名与频道组
+python3 channelSource.py -f /home/xxx/Desktop/test/test.zip -n 上海卫视 -g 上海总
+3. 操作多个zip包，文件夹下有多个zip包
+有效源与无效源将在.`/output/source/年_月_日_时_分_秒`目录下生成
+python3 channelSource.py -d /home/xxx/Desktop/test/
+4. 改换`北京卫视, http://xxxx`格式的视频源文件到m3u
+文件生成到该文件目录下，为`InM3u8.m3u`的后缀
+python3 channelSource.py -c /home/xxx/Desktop/test/test.m3u
 '''
 WRONG = "参数输入错误"
 # 排除从网站抓取的源
@@ -58,6 +76,7 @@ def getChannelGroupName(channelName: str, channelGroup: str = None):
     qinghaiTVRegex = r"安多卫视"
     xinjiangTVRegex = r"兵团卫视"
     shanxiTVRegex = r"农林卫视"
+    gangaotaiTVRegex = r"凤凰卫视中文台|凤凰卫视咨询台"
     if re.search(cctvRegex, channelName, re.I) != None:
         channelGroup = "央视"
     elif re.search(shanghaiTVRegex, channelName, re.I) != None:
@@ -80,6 +99,8 @@ def getChannelGroupName(channelName: str, channelGroup: str = None):
         channelGroup = "新疆总"
     elif re.search(shanxiTVRegex, channelName, re.I) != None:
         channelGroup = "陕西总"
+    elif re.search(gangaotaiTVRegex, channelName, re.I) != None:
+        channelGroup = "港澳台总"
     elif re.search("卫视", channelName, re.I) != None:
         channelGroup = channelName[:channelName.find("卫视")] + "总"
     elif re.search("NewTV", channelName, re.I) != None:

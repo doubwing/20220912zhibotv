@@ -1,69 +1,95 @@
 #EXTM3U
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://111.20.33.93/PLTV/88888893/224/3221226547/index.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://playtv-live.ifeng.com/live/06OLEGEGM4G_tv2.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-https://playtv-live.ifeng.com/live/06OLEGEGM4G_tv2.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-https://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://183.207.248.169/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://playtv-live.ifeng.com/live/06OLEGEGM4G_tv1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://111.13.42.232/PLTV/88888888/224/3221225942/1.m3u8?icpid=88888888&from=1&hms_devid=459
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-https://playtv-live.ifeng.com/live/06OLEGEGM4G_tv1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://183.207.249.34/PLTV/3/224/3221226922/index.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://171.108.239.38:8181/tsfile/live/1023_1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://playtv-live.ifeng.com:80/live/06OLEGEGM4G.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://111.59.189.40:8445/tsfile/live/1020_1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://playtv-live.ifeng.com:80/live/06OLEGEGM4G_tv2.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://play-live.ifeng.com/live/06OLEGEGM4G.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://playtv-live.ifeng.com:80/live/06OLEGEGM4G_tv1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://183.207.249.35/PLTV/3/224/3221226922/index.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视中文台
-http://[2409:8087:3428:20:500::1009]:6610/PLTV/88888888/224/3221227222/index.m3u8?servicetype=1&IASHttpSessionId=RR423820220409134714119178
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://[2409:8087:3428:20:500::1009]:6610/PLTV/88888888/224/3221227226/index.m3u8?servicetype=1&IASHttpSessionId=RR423820220409134714119178
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://playtv-live.ifeng.com:80/live/06OLEEWQKN4_tv1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://playtv-live.ifeng.com:80/live/06OLEEWQKN4_tv2.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://183.207.249.34/PLTV/3/224/3221226923/index.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://117.169.120.138:8080/live/fhzixun/.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://183.207.249.35/PLTV/3/224/3221226923/index.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-https://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv2.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://playtv-live.ifeng.com:80/live/06OLEEWQKN4.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://111.13.42.230/PLTV/88888888/224/3221225949/1.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://playtv-live.ifeng.com/live/06OLEEWQKN4_tv2.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://play-live.ifeng.com/live/06OLEEWQKN4.m3u8
-#EXTINF:-1 group-title="凤凰总",凤凰卫视咨询台
-http://117.169.120.138:8080/live/fhzixun/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-1
+https://iplive-try.wasu.tv/11078.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643171858140-2-0050646e5c7933bdc45871c5d629d453 
+#EXTINF:-1 group-title="央视",CCTV-2
+https://iplive-try.wasu.tv/11079.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643172588992-2-106ed245797cab5bf14790c11954fb7d 
+#EXTINF:-1 group-title="央视",CCTV-3
+https://iplive-try.wasu.tv/11101.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643173132234-2-661ffd37db44674bc93d1fbe0e26dc18 
+#EXTINF:-1 group-title="央视",CCTV-4
+https://iplive-try.wasu.tv/11117.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643179315212-2-19d8a4ac88a934b97009f84502c3cac8 
+#EXTINF:-1 group-title="央视",CCTV-5
+https://iplive-try.wasu.tv/11102.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643179457911-2-b13cb4c8761a95467b2ca4ef186c2836 
+#EXTINF:-1 group-title="央视",CCTV-6
+https://iplive-try.wasu.tv/11103.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643169640019-2-33940ad8c84d7cc8c58473edc0fa4616 
+#EXTINF:-1 group-title="央视",CCTV-7
+https://iplive-try.wasu.tv/11118.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643179586712-2-dba94e702017ecdf208200577be8aa7a 
+#EXTINF:-1 group-title="央视",CCTV-8
+https://iplive-try.wasu.tv/11104.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q990BA9552C5EAE0&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643200512741-2-eaaa0e4fc7f52be3342215298fd89000 
+#EXTINF:-1 group-title="央视",CCTV-9
+https://iplive-try.wasu.tv/11119.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643179915377-2-38ab1925a59ead0c7bc33a9a2a086ec4 
+#EXTINF:-1 group-title="央视",CCTV-10
+https://iplive-try.wasu.tv/11120.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180039339-2-5457d5437cb212dd6c459aa4cb37c7cf 
+#EXTINF:-1 group-title="央视",CCTV-11
+https://iplive-try.wasu.tv/11121.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180043937-2-29e0afd456b9ea6fbe8747052e4be4aa 
+#EXTINF:-1 group-title="央视",CCTV-12
+https://iplive-try.wasu.tv/11122.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180047756-2-24f17c7bcffe0b29503a3329d9199704 
+#EXTINF:-1 group-title="央视",CCTV-13
+https://iplive-try.wasu.tv/11127.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180055072-2-ba8136bc9a972122d1d99635d6010fcc 
+#EXTINF:-1 group-title="央视",CCTV-14
+https://iplive-try.wasu.tv/11080.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180058732-2-ab80091cb6afec4576f7ea87622ad999 
+#EXTINF:-1 group-title="央视",CCTV-15
+https://iplive-try.wasu.tv/11081.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180063224-2-7a1be3f18276ebce08837b33e2e232e7 
+#EXTINF:-1 group-title="央视",CCTV-17
+https://iplive-try.wasu.tv/11123.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180069564-2-40f2c2266db4900d2735db4bb2907327 
+#EXTINF:-1 group-title="浙江总",浙江卫视
+https://iplive-try.wasu.tv/11084.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180518571-2-1c4964460dd0acea7d2d91499cb6c6c2 
+#EXTINF:-1 group-title="湖南总",湖南卫视
+https://iplive-try.wasu.tv/11083.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180522491-2-0dea8b1f0b7e8295fdd7637451e44948 
+#EXTINF:-1 group-title="安徽总",安徽卫视
+https://iplive-try.wasu.tv/11082.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180526224-2-8918535db87f005256567b362b4df32f 
+#EXTINF:-1 group-title="江苏总",江苏卫视
+https://iplive-try.wasu.tv/11087.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180787934-2-ee479bcd94a766a0f44ae7eda89aa997 
+#EXTINF:-1 group-title="上海总",东方卫视
+https://iplive-try.wasu.tv/11085.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180792465-2-57698c02a78f5d84ff525a30394f3198 
+#EXTINF:-1 group-title="北京总",北京卫视
+https://iplive-try.wasu.tv/11086.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180796576-2-74118d29966ad09191363aa7ea0bda71 
+#EXTINF:-1 group-title="四川总",四川卫视
+https://iplive-try.wasu.tv/11125.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180966686-2-b5b8a15dd537314e043a2a549fecd2f6 
+#EXTINF:-1 group-title="重庆总",重庆卫视
+https://iplive-try.wasu.tv/11105.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180970826-2-4baea80c4c622252a2abecac39caaa1a 
+#EXTINF:-1 group-title="贵州总",贵州卫视
+https://iplive-try.wasu.tv/11126.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180974201-2-9e03800e0519c11ebd5458fc06a79244 
+#EXTINF:-1 group-title="天津总",天津卫视
+https://iplive-try.wasu.tv/11106.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181131270-2-97a50edc284f179eed40e4ec75c41981 
+#EXTINF:-1 group-title="广东总",深圳卫视
+https://iplive-try.wasu.tv/11107.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181134579-2-58ebcc8963d2508c3f1290ecc9357c8c 
+#EXTINF:-1 group-title="辽宁总",辽宁卫视
+https://iplive-try.wasu.tv/11109.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181139292-2-0eb4c0ee617e9e402d018fa26eced66e 
+#EXTINF:-1 group-title="山东总",山东卫视
+https://iplive-try.wasu.tv/11108.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181284496-2-435fe86128712420e62317adb5ff2d79 
+#EXTINF:-1 group-title="江西总",江西卫视
+https://iplive-try.wasu.tv/11111.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181286768-2-029e842831428034f812a7f97e586e16 
+#EXTINF:-1 group-title="吉林总",吉林卫视
+https://iplive-try.wasu.tv/11110.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181290425-2-2b7f1d32388e6d7a58adf3c57b879424 
+#EXTINF:-1 group-title="黑龙江总",黑龙江卫视
+https://iplive-try.wasu.tv/11113.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181531149-2-f832d42193d6a47e28d84f489f5d58fd 
+#EXTINF:-1 group-title="河北总",河北卫视
+https://iplive-try.wasu.tv/11114.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181662921-2-1a46d341f15d7ecd287620da9655917e
+#EXTINF:-1 group-title="湖北总",湖北卫视
+https://iplive-try.wasu.tv/11116.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643181529071-2-899bef717e90b9433ebb7b2958cc7f55 
+#EXTINF:-1 group-title="河南总",河南卫视
+https://iplive-try.wasu.tv/11112.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182228400-2-34fc236f2aadcaa97371a462e4b20953 
+#EXTINF:-1 group-title="广西总",广西卫视
+https://iplive-try.wasu.tv/11124.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182232500-2-ba7af98e2665775ac3cd712cdb42c70b 
+#EXTINF:-1 group-title="广东总",广东卫视
+https://iplive-try.wasu.tv/11115.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182236812-2-071820586cfbb3fbaad6ae51ed4e61cc 
+#EXTINF:-1 group-title="山西总",山西卫视
+https://iplive-try.wasu.tv/11060.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182479466-2-82e55ac575c97b8c4be1b5018cf1e686 
+#EXTINF:-1 group-title="福建总",东南卫视
+https://iplive-try.wasu.tv/11076.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182483174-2-bdef1c3543802b0b51a47fc7a00a0402 
+#EXTINF:-1 group-title="甘肃总",甘肃卫视
+https://iplive-try.wasu.tv/11075.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182487085-2-1010d0ffa56bc9cc0c52af095ed5d09b 
+#EXTINF:-1 group-title="新疆总",兵团卫视
+https://iplive-try.wasu.tv/11077.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182673128-2-0f74c91baaa873c86ce6b08d6b1364ce 
+#EXTINF:-1 group-title="青海总",青海卫视
+https://iplive-try.wasu.tv/11062.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182679740-2-3f94983327fc92df380e7ca31809fa6b
+#EXTINF:-1 group-title="内蒙古总",内蒙古卫视
+https://iplive-try.wasu.tv/11063.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182684428-2-4e7fe031eb1c43fe8dd8362b27cc6df6 
+#EXTINF:-1 group-title="海南总",海南卫视
+https://iplive-try.wasu.tv/11071.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182913119-2-8d5093d6520a0971d0142ee79eafe103 
+#EXTINF:-1 group-title="陕西总",陕西卫视
+https://iplive-try.wasu.tv/11059.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182917208-2-8d68f1b08172d5df0b7495b3e6cb9dbb 
+#EXTINF:-1 group-title="西藏总",西藏卫视
+https://iplive-try.wasu.tv/11055.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643182927176-2-583e5d63aacf791d0a99997bf796af20 
+#EXTINF:-1 group-title="新疆总",新疆卫视
+https://iplive-try.wasu.tv/11054.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643183057866-2-d46508ef90052e9a2cceb7af04b0913f 

@@ -714,6 +714,36 @@ http://[2409:8087:1070:301:2028::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888
 http://[2409:8087:1030:301:2025::1a]:80/wh7f454c46tw3909820148_1682785119/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225639/10000100000000060000000000000570_0.smil/01.m3u8?fmt=ts2hls
 #EXTINF:-1 group-title="辽宁总",辽宁卫视（源8）
 http://[2409:8087:1070:301:2026::11]:80/wh7f454c46tw4188280397_-325140314/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225902/10000100000000060000000000373632_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="海南总",三沙卫视（源1）
+http://[2409:8087:1070:301:2028::11]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225940/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="海南总",三沙卫视（源2）
+http://[2409:8087:1070:301:2028::1e]:80/wh7f454c46tw4198351695_710519513/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225940/10000100000000060000000000753734_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="海南总",海南卫视（源1）
+http://[2409:8087:1070:301:2028::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225930/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="海南总",海南卫视（源2）
+http://[2409:8087:1070:301:2028::1e]:80/wh7f454c46tw4195971476_-908624732/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225930/10000100000000060000000000725938_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="海南总",海南卫视（源3）
+http://[2409:8087:1070:301:2026::1d]:80/wh7f454c46tw3911207732_307449774/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225644/10000100000000060000000000000576_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="海南总",海南卫视（源4）
+http://[2409:8087:1070:301:2026::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225644/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="河北总",河北卫视（源1）
+http://[2409:8087:1070:301:2026::25]:80/wh7f454c46tw4187706589_-1107367474/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225900/10000100000000060000000000373634_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="河北总",河北卫视（源2）
+http://[2409:8087:1070:301:2026::25]:80/wh7f454c46tw3912381510_72390835/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225648/10000100000000060000000000000580_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="河北总",河北卫视（源3）
+http://[2409:8087:1070:301:2026::1f]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225900/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="河北总",河北卫视（源4）
+http://[2409:8087:1070:301:2026::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225648/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="云南总",云南卫视（源1）
+http://[2409:8087:1050:301:2026::12]:80/wh7f454c46tw3910642736_-1227225764/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225642/10000100000000060000000000000573_0.smil/01.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="云南总",云南卫视（源2）
+http://[2409:8087:1050:301:2026::12]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225642/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="陕西总",农林卫视（源1）
+http://39.135.138.58:18890/PLTV/88888888/224/3221226204/index.m3u8
+#EXTINF:-1 group-title="陕西总",陕西卫视（源1）
+http://[2409:8087:1050:301:2026::12]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225637/index.m3u8?fmt=ts2hls
+#EXTINF:-1 group-title="陕西总",陕西卫视（源2）
+http://[2409:8087:1050:301:2026::12]:80/wh7f454c46tw3909241448_1491849181/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225637/10000100000000060000000000000568_0.smil/01.m3u8?fmt=ts2hls
 #EXTINF:-1 group-title="福建总",东南卫视（源1）
 http://39.135.138.58:18890/PLTV/88888888/224/3221225657/index.m3u8
 #EXTINF:-1 group-title="福建总",东南卫视（源2）
@@ -2826,12 +2856,6 @@ https://liveout.xntv.tv/a65jur/90p2i1.m3u8
 http://dtrmlive.qhdtrm.cn/xnds/sd/live.m3u8
 #EXTINF:-1 group-title="青海",西宁新闻综合（源1）
 https://liveout.xntv.tv/a65jur/96iln2.m3u8
-#EXTINF:-1 group-title="陕西总",农林卫视（源1）
-http://39.135.138.58:18890/PLTV/88888888/224/3221226204/index.m3u8
-#EXTINF:-1 group-title="陕西总",陕西卫视（源1）
-http://[2409:8087:1050:301:2026::12]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225637/index.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="陕西总",陕西卫视（源2）
-http://[2409:8087:1050:301:2026::12]:80/wh7f454c46tw3909241448_1491849181/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225637/10000100000000060000000000000568_0.smil/01.m3u8?fmt=ts2hls
 #EXTINF:-1 group-title="陕西",西安新闻综合（源1）
 http://stream2.xiancity.cn/xatv1/sd/live.m3u8
 #EXTINF:-1 group-title="陕西",西安白鸽都市（源1）
@@ -4038,27 +4062,3 @@ https://gcalic.v.myalicdn.com/gc/hsmbsh_1/index.m3u8?contentid=2820180516001
 https://gcalic.v.myalicdn.com/gc/hsgmd_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="景区",安徽-黄山飞来石（源1）
 https://gcalic.v.myalicdn.com/gc/hsptgy_1/index.m3u8?contentid=2820180516001
-#EXTINF:-1 group-title="海南总",三沙卫视（源1）
-http://[2409:8087:1070:301:2028::11]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225940/index.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="海南总",三沙卫视（源2）
-http://[2409:8087:1070:301:2028::1e]:80/wh7f454c46tw4198351695_710519513/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225940/10000100000000060000000000753734_0.smil/01.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="海南总",海南卫视（源1）
-http://[2409:8087:1070:301:2028::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225930/index.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="海南总",海南卫视（源2）
-http://[2409:8087:1070:301:2028::1e]:80/wh7f454c46tw4195971476_-908624732/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225930/10000100000000060000000000725938_0.smil/01.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="海南总",海南卫视（源3）
-http://[2409:8087:1070:301:2026::1d]:80/wh7f454c46tw3911207732_307449774/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225644/10000100000000060000000000000576_0.smil/01.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="海南总",海南卫视（源4）
-http://[2409:8087:1070:301:2026::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225644/index.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="河北总",河北卫视（源1）
-http://[2409:8087:1070:301:2026::25]:80/wh7f454c46tw4187706589_-1107367474/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225900/10000100000000060000000000373634_0.smil/01.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="河北总",河北卫视（源2）
-http://[2409:8087:1070:301:2026::25]:80/wh7f454c46tw3912381510_72390835/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225648/10000100000000060000000000000580_0.smil/01.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="河北总",河北卫视（源3）
-http://[2409:8087:1070:301:2026::1f]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225900/index.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="河北总",河北卫视（源4）
-http://[2409:8087:1070:301:2026::1e]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225648/index.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="云南总",云南卫视（源1）
-http://[2409:8087:1050:301:2026::12]:80/wh7f454c46tw3910642736_-1227225764/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225642/10000100000000060000000000000573_0.smil/01.m3u8?fmt=ts2hls
-#EXTINF:-1 group-title="云南总",云南卫视（源2）
-http://[2409:8087:1050:301:2026::12]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225642/index.m3u8?fmt=ts2hls

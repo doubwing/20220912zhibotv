@@ -610,6 +610,8 @@ http://[2409:8087:1030:301:2025::15]:80/wh7f454c46tw4001654766_-123529816/gslbse
 http://[2409:8087:1070:301:2028::18]/gslbserv.iptv.nm.chinamobile.com/PLTV/88888890/224/3221225909/index.m3u8?fmt=ts2hls
 #EXTINF:-1 group-title="江苏总",江苏卫视
 https://iplive-try.wasu.tv/11087.m3u8?group=600112&servicetype=0&livemode=1&servicegrade=2&servicesp=dangbei&userid=dangbei_user_c4:e1:a1:c2:0e:91&tvid=03019Q9908AB284C41F8E&stbid=0fdf605ceb89598a4b4f3bbea5a9b315&authNum=1643180787934-2-ee479bcd94a766a0f44ae7eda89aa997 
+#EXTINF:-1 group-title="江苏总",江苏卫视
+https://live-hls.jstv.com/livezhuzhan/jsws.m3u8?upt=4a347f651961162206
 #EXTINF:-1 group-title="浙江总",浙江卫视
 http://hw-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
 #EXTINF:-1 group-title="浙江总",浙江卫视

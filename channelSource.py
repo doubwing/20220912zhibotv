@@ -163,6 +163,7 @@ if __name__ == "__main__":
     channelSourceZipFile = ''
     channelName = ''
     channelGroupName = ''
+    channelSourceZipFileDir = ''
     try:
         opts, args = getopt.getopt(sys.argv[1: ], "hf:n:g:d:c:", ["help", "file=", "name=", "group=", "dir=", "change="])
     except getopt.GetoptError: 
